@@ -1,0 +1,87 @@
+body, html {margin: 0; padding:0;}
+
+.header__me { background: #000000;
+          border: 7px solid;
+          margin: 0;
+          padding: 0;
+
+        }
+.header__logo__sx {
+        width: 100px;
+        height: 100px;
+        border: 5px solid;
+        float: left
+        }
+.header__logo__dx {
+        width: 100px;
+        height: 100px;
+        border: 5px solid;
+        float: right;
+        }
+.header__logo__center  {
+        /*display: block;*/
+        height: 100px;
+        margin-left: 300px;
+
+        }
+
+
+@media (max-width: 998px){
+  .header__logo__center  {
+          float: middle;
+          height: 70px;
+          margin-left: 0px;
+          margin: 0;
+          padding: 0;
+
+          }
+  .header__logo__sx {
+          width: 70px;
+          height: 70px;
+          border: 5px solid;
+          float: left
+          }
+  .header__logo__dx {
+          width: 70px;
+          height: 70px;
+          border: 5px solid;
+          float: right;
+          }
+        }
+@media (max-width: 767px){
+    .header__logo__center  {
+          float: middle;
+          height: 50px;
+          margin-left: 0px;
+          margin: 0;
+          padding: 0;
+
+                    }
+    .header__logo__sx {
+          width: 50px;
+          height: 50px;
+          border: 5px solid;
+          float: left
+          }
+    .header__logo__dx {
+          width: 50px;
+          height: 50px;
+          border: 5px solid;
+          float: right;
+          }
+
+
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
