@@ -1,87 +1,57 @@
-body, html {margin: 0; padding:0;}
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
 
-.header__me { background: #000000;
-          border: 7px solid;
-          margin: 0;
-          padding: 0;
-
-        }
-.header__logo__sx {
-        width: 100px;
-        height: 100px;
-        border: 5px solid;
-        float: left
-        }
-.header__logo__dx {
-        width: 100px;
-        height: 100px;
-        border: 5px solid;
-        float: right;
-        }
-.header__logo__center  {
-        /*display: block;*/
-        height: 100px;
-        margin-left: 300px;
-
-        }
-
-
-@media (max-width: 998px){
-  .header__logo__center  {
-          float: middle;
-          height: 70px;
-          margin-left: 0px;
-          margin: 0;
-          padding: 0;
-
-          }
-  .header__logo__sx {
-          width: 70px;
-          height: 70px;
-          border: 5px solid;
-          float: left
-          }
-  .header__logo__dx {
-          width: 70px;
-          height: 70px;
-          border: 5px solid;
-          float: right;
-          }
-        }
-@media (max-width: 767px){
-    .header__logo__center  {
-          float: middle;
-          height: 50px;
-          margin-left: 0px;
-          margin: 0;
-          padding: 0;
-
-                    }
-    .header__logo__sx {
-          width: 50px;
-          height: 50px;
-          border: 5px solid;
-          float: left
-          }
-    .header__logo__dx {
-          width: 50px;
-          height: 50px;
-          border: 5px solid;
-          float: right;
-          }
-
-
+nav ul a,
+nav .brand-logo {
+  color: #444;
 }
-.clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0;
+
+p {
+  line-height: 2rem;
 }
-.clearfix { display: inline-block; }
-/* start commented backslash hack \*/
-* html .clearfix { height: 1%; }
-.clearfix { display: block; }
-/* close commented backslash hack */
+
+.sidenav-trigger {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
